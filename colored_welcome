@@ -1,0 +1,44 @@
+#Code to use name, age, and favorite color to send welcome message
+#Amber Bomboy
+#CEIS150
+#January 2024 
+#import colorama set to Fore text
+
+From Colorama import Fore, Init 
+Init()
+
+#input name, age, & color selection
+name = input("What is your name?:")
+
+age = input("How old are you?:")
+
+favColor = input("What is your favorite out of, black, red, green, yellow, blue, magenta, cyan, and white?:")
+
+#output Color vairable text selection
+if favColor == red:
+  color = getattr(Fore, RED)
+  print (color("Welcome to CEIS150, {name}. So good to see you continue your leaning journey at, {age}!"))
+
+if favColor == green:
+  color = getattr(Fore, GREEN)
+  print (color("Welcome to CEIS150, {name}. So good to see you continue your leaning journey at, {age}!"))
+
+if favColor == yellow:
+  color = getattr(Fore, YELLOW)
+  print (color("Welcome to CEIS150, {name}. So good to see you continue your leaning journey at, {age}!"))
+
+if favColor == blue:
+  color = getattr(Fore, BLUE)
+  print (color("Welcome to CEIS150, {name}. So good to see you continue your leaning journey at, {age}!"))
+
+if favColor == magenta:
+  color = getattr(Fore, MAGENTA)
+  print (color("Welcome to CEIS150, {name}. So good to see you continue your leaning journey at, {age}!"))
+
+if favColor == cyan:
+  color = getattr(Fore, CYAN)
+  print (color("Welcome to CEIS150, {name}. So good to see you continue your leaning journey at, {age}!"))
+
+if favColor == white:
+  color = getattr(Fore, WHITE)
+  print (color("Welcome to CEIS150, {name}. So good to see you continue your leaning journey at, {age}!"))
