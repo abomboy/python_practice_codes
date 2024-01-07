@@ -1,0 +1,49 @@
+# Review sequence control structures, selection control structures, and repetition control structures. Give an example of each in python.
+
+#Sequences can be:
+  #lists assigns multiple variables of data in a specific order that can be stored as well as accessed by each element selected   
+  #Byterrays multiple sequence of integers
+  #Strings uses a creator designated sequence of charaters, words, or letters
+  #tuples uses a mix of elements and is faster when it is large
+  #Ranges
+  #bytes a range of 0-255
+
+#range example 
+
+temperature = 68
+if temperature >70:
+    print("turn on air conditioner")
+else:
+    print("Do not turn on air conditioner")
+if temperature <60:
+    print("turn on Heater")
+else:
+    print("Do not turn on heater")
+
+#Sequence control
+ #sequence index starts at 0, not 1
+  #sequence types: lists, bytearrays, strings, tuples, range, and bytes
+
+x = input(int("X"))
+y = input(int("Y")) 
+
+z = x + y print(z) 
+
+#Selection Control
+
+x = input("Enter a number between 0-25:") 
+
+if x > 10: 
+    print("x is greater than 10") 
+else: print("x is less than or equal to 10") 
+
+#Repitition Control
+#Can be set for a number of repetitions or to specific ranges
+x = input("enter a number:") 
+while x <= 100: 
+
+  print(x) x += 5 
+
+for i in range(100): 
+  
+  print(i) 
