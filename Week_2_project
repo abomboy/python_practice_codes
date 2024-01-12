@@ -1,39 +1,38 @@
-class Employee: 
+"""
+Amber Bomboy
+CEIS150
+01/08/2024
+"""
+#Create Stock object
+class Stock: 
 
-    def __init__(self, empID, name, salary): 
+    def __init__(self, symbol, name, shares): 
 
-        self.empID = empID 
+        self.sylmbol = symbol 
 
         self.name = name 
 
-        self.salary = salary 
+        self.shares = shares 
 
-        self.PayCheckList = [] # list of payroll history 
+        self.DataList = []  
+      
 
- 
+    #add daily stock info to DataList
+    def add_data(sel, stock_data): 
 
+        self.DataList.append(stock_data) 
+
+class DailyData:
+    def __init__(self, date, close, volume)
         
-
-    # Add paycheck data 
-
-    def add_data(self, pay_data): 
-
-        self.PayCheckList.append(pay_data) 
-
- 
-
- 
-
-class PayCheckData: 
-
-    def __init__(self, date, hours, pay): 
-
-        self.date = date 
-
-        self.hours = hours 
-
-        self.pay = pay 
+        self.date = date
+       
+        self.close = close
         
+        self.volume = volume
+
+#code goes below methods
+     
 # Unit Test - Do Not Change Code Below This Line *** *** *** *** *** *** *** *** *** 
 
 # main() is used for unit testing only. It will run when stock_class.py is run. 
