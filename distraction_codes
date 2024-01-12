@@ -1,0 +1,4 @@
+#Creating a payroll time calculator
+
+class PayrollCalculation: 
+  def __init__(self, name, hours, payamount)
