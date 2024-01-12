@@ -31,17 +31,10 @@ class DailyData:
         
         self.volume = volume
 
-#code goes below methods
      
 # Unit Test - Do Not Change Code Below This Line *** *** *** *** *** *** *** *** *** 
-
-# main() is used for unit testing only. It will run when stock_class.py is run. 
-
-# Run this to test your class code. Once you have eliminated all errors, you are 
-
-# ready to continue with the next part of the project. 
-
- 
+# main() is used for unit testing only. It will run when stock_class.py is run.
+#TEST CODE  
 
 def main(): 
 
