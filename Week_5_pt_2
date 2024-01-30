@@ -1,0 +1,28 @@
+Def display_ chart(stock_list): 
+
+#output “Stock List: [“ (do not start a new line at the end) 
+	print("Stock List: [", end=""))
+	for stock in stock_list: 
+		print(stock.symbol + " ", end= "")
+		print("]")
+
+#input symbol (convert to upper case) 
+symbol = input("Which stock would you like to display: ").upper()
+#set found to False 
+found = False
+
+	for stock in stock_list 
+		if stock.symbol == symbol: 
+			found = true 
+			current_stock = stock 
+
+	if found = True 
+	display_stock_chart(stock_list, symbol) 
+else: 
+#output error message for symbol not found 
+	print("ERROR symbol not found...")
+#pause and prompt the user to press Enter to continue
+_ = input("\nPress Enter to Continue ***")
+ 
+
+ 
