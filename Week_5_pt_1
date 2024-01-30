@@ -1,0 +1,33 @@
+def display_stock_chart(stock_list, symbol): 
+
+ 
+#create lists for date, price, volume
+date = []
+price = []
+volume = [] 
+#set company
+company = "" 
+
+for stock in stock_list: 
+
+	if stock.symbol = symbol: 
+
+		company = stock.name 
+
+		for dailyData in stock.DataList: 
+
+			date.append(dailyData.date) 
+
+			price.append(dailyData.close) 
+
+			volume.append(dailyData.volume) 
+
+#call plt.plot() passing date, price 
+plt.plot(df['Date'], df['price'])
+#call plt.xlabel() passing ‘Date’ 
+plt.xlabel('Date', fontsize = 20)
+#call plt.ylabel() passing ‘Price’ 
+plt.ylabel('Price', fontsize = 20)
+#call plt.title() passing company 
+plt.title(company)
+plt.show() 
