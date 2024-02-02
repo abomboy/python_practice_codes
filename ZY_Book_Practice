@@ -1,29 +1,24 @@
-class Pet:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+# TODO: Import the random module
+import random
 
-    def print_info(self):
-        print('Pet Information:')
-        print('   Name:', self.name)
-        print('   Age:', self.age)
-
-class Dog(Pet):
-    def __init__(self, name, age, breed):
-        super().__init__(name, age) 
-        self.breed = breed
-    def print_info(self):
-        super().print_info()
-        print ('   Breed:', self.breed)
-
-pet_name = input()
-pet_age = int(input())
-dog_name = input()
-dog_age = int(input())
-dog_breed = input()
-
-pet = Pet(pet_name, pet_age)
-pet.print_info()
-dog = Dog(dog_name, dog_age, dog_breed)
-dog.print_info()
-
+def number_guess(num):
+    # TODO: Get a random number between 1-100
+    rand_num = random.randint(1,100)
+    # TODO: Read numbers and compare to random number
+    if num < rand_num:
+        print('{} is too low. Random number was {}.'.format(num, rand_num))
+    elif num > rand_num:
+        print('{} is too high. Random number was {}.'.format(num, rand_num))
+    else:
+        print(rand_num,"is correct!")
+        
+if __name__ == "__main__":
+    # Use the seed 900 to get the same pseudo random numbers every time
+    random.seed(900)
+    
+    # Convert the string tokens into integers
+    user_input = input()
+    tokens = user_input.split()
+    for token in tokens:
+        num = int(token)
+        number_guess(num)
